@@ -8,18 +8,27 @@ body {
     margin: 0;
     height: 100vh;
     font-family: Arial;
-    background: url("mite.png") center/cover no-repeat;
+    background-color: white;
+
+    /* image (not fullscreen) */
+    background-image: url("mite.png");
+    background-repeat: no-repeat;
+    background-size: 550px auto;
+    background-position: center 30%;
+
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
+/* button container */
 .buttons {
     margin-bottom: 18vh;
     display: flex;
     gap: 20px;
 }
 
+/* buttons */
 button {
     width: 220px;
     height: 60px;
@@ -28,8 +37,14 @@ button {
     font-size: 16px;
     cursor: pointer;
     border-radius: 10px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #f2f2f2;
 }
 </style>
+
 </head>
 
 <body>
